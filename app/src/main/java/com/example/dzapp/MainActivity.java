@@ -116,13 +116,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void calculate() {
-        String text =  editText.getText().toString();
-        String[] parts = text.split("[+]");
-
-        for (String part : parts) {
-            System.out.println(part);
-        }
-
         Log.d("SergeyTag", "calculate " + Integer.parseInt(editText.getText().toString()));
         operand2 = Integer.parseInt(editText.getText().toString());
         int result = 0;
